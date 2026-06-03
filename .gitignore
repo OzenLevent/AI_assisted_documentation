@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Except markdown files
+!*.md
+
+# Except HTML files
+!*.html
+
+# Always track .gitignore itself
+!.gitignore
