@@ -89,9 +89,20 @@ For each language FM file:
 
 > **Starting point:** always the current English version for Phase 1 and 2; current language version for Phase 3.
 
+---
 
+## Session and Context Limits
 
-## Tools
+AI context is **session-only** — nothing is retained between sessions. The skill file is reloaded at the start of each session to restore full project context.
+
+**Context window limit: 200K tokens.** MIF files are verbose; a single large chapter can consume tens of thousands of tokens.
+
+| Rule | Reason |
+|---|---|
+| Process **one chapter at a time** — never load a full book MIF in one session | Prevents context overflow mid-processing |
+| Capture decisions and progress in the skill file before ending a session | Prevents loss of work not yet written to a file |
+| If context fills mid-session, start a fresh session | Skill reload restores full project context immediately |
+| Keep each session scope small and focused | Avoids silent loss of earlier context within a session |
 
 ### Currently installed
 
