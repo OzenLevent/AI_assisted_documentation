@@ -46,7 +46,7 @@ FrameMaker source files → AI-assisted review → content updates → revised O
 | Tool | Version | Purpose |
 |---|---|---|
 | Adobe FrameMaker | 2015 | Authoring and publishing OLH manuals (`.book`, `.fm`, MIF export) |
-| WebWorks Publisher | — | Publishing FrameMaker content to online help output formats |
+| WebWorks Publisher | 2019.2 | Publishing FrameMaker content to online help output formats |
 | OpenCode | — | AI-assisted content rewriting, revision, and translation |
 | Node.js | v24 | Runtime for the Playwright screenshot tool |
 | Playwright | — | Automated browser-based UI screenshots |
