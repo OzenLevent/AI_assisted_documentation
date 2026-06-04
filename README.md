@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This repository tracks AI-assisted documentation tasks for updating and revising online help (OLH) manuals, starting from existing FrameMaker source files.
+This repository tracks AI-assisted documentation tasks for updating, revising, and translating online help (OLH) manuals, starting from existing FrameMaker source files.
 
-The workflow leverages AI tools to analyse, revise, and improve documentation content while maintaining consistency with the original FrameMaker structure and ECO3 documentation standards.
+The workflow leverages AI tools to analyse, revise, improve, and translate documentation content while maintaining consistency with the original FrameMaker structure and ECO3 documentation standards.
 
 ---
 
@@ -16,6 +16,8 @@ Online help manuals for ECO3 products (Apogee, ProductionCenter, PrintSphere) ar
 - Identify gaps, inconsistencies, and outdated information
 - Improve RAG-readiness of documentation for AI-powered search tools
 - Maintain alignment with current product versions
+- Translate OLH content into target languages using AI assistance
+- Review and improve existing translated content for accuracy and consistency
 
 ---
 
@@ -32,6 +34,7 @@ Online help manuals for ECO3 products (Apogee, ProductionCenter, PrintSphere) ar
 
 ```
 FrameMaker source files → AI-assisted review → content updates → revised OLH output
+                       → AI-assisted translation → translated OLH output → translation review
 ```
 
 ---
@@ -62,4 +65,4 @@ Currently supported application: **PrintSphere** (`www.printsphere.com`)
 
 ## Labels
 
-`documentation` `ai-assisted` `framemaker` `online-help` `olh` `apogee` `eco3`
+`documentation` `ai-assisted` `framemaker` `online-help` `olh` `apogee` `eco3` `translation`
