@@ -39,6 +39,28 @@ FrameMaker source files → AI-assisted review → content updates → revised O
 
 ---
 
+## Tools
+
+### Currently installed
+
+| Tool | Version | Purpose |
+|---|---|---|
+| Adobe FrameMaker | 2015 | Authoring and publishing OLH manuals (`.book`, `.fm`, MIF export) |
+| OpenCode | — | AI-assisted content rewriting, revision, and translation |
+| Node.js | v24 | Runtime for the Playwright screenshot tool |
+| Playwright | — | Automated browser-based UI screenshots |
+| Snagit | — | Manual one-off screenshots |
+| Git | — | Version control |
+| GitHub / GitHub Pages | — | Repository hosting and live documentation page |
+
+### Planned
+
+| Tool | Purpose |
+|---|---|
+| | |
+
+---
+
 ## Related Projects
 
 | Repository | Purpose |
