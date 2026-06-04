@@ -42,6 +42,21 @@ FrameMaker source files → AI-assisted review → content updates → revised O
 |---|---|
 | `Apogee_Essentials_Edition` | AI-assisted HTML product page creation and SEO |
 | `APAI_Chat` | Document tracking and RAG-readiness scoring for APAI Chat knowledge base |
+| `PrintSphere` | OLH review, implementation guides, and automated UI screenshots |
+
+---
+
+## Screenshots
+
+UI screenshots for OLH documentation are captured with a **Playwright** automation tool.  
+The tool is launched from a desktop shortcut and runs in two steps: select the application, then select the page.
+
+**Launcher:** `D:\Users\AQCWT\OpenCode_Doc\PrintSphere\playwright\take_screenshot.bat`  
+**Screenshots saved to:** `D:\Users\AQCWT\OpenCode_Doc\PrintSphere\screenshots\`
+
+Currently supported application: **PrintSphere** (`www.printsphere.com`)
+
+> For one-off screenshots, **Snagit** is preferred. The Playwright tool is best for automated or repeated captures.
 
 ---
 
