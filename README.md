@@ -99,7 +99,7 @@ For each language FM file:
 | Tool | Purpose |
 |---|---|
 | WinMerge | Diff MIF files between versions to isolate changed segments |
-| DeepL | First-pass machine translation of changed segments across 10 languages |
+| DeepL (desktop app) | First-pass machine translation of changed segments across 10 languages — free to install |
 
 ---
 
