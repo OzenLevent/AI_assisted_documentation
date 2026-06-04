@@ -60,10 +60,22 @@ Each FM book is processed through three sequential phases. **Phase 3 (translatio
 ```
 Spec / tech note (PDF or Word) + Phase 1 output MIF
 → OpenCode: compare spec against OLH content
-→ update outdated sections, add new features
+→ update outdated sections, add new features, flag removed/invalid content
 → review and approve → re-import into FrameMaker
 → ✓ English signed off — gate before Phase 3
 ```
+
+Content changes in Phase 2 fall into three categories:
+
+| Change type | Description | Approach |
+|---|---|---|
+| **Update** | Revise existing paragraphs, steps, or descriptions to match the new version | Direct edit → new MIF file |
+| **Add** | Insert new sections, procedures, or notes for new features | Proposal in chat → approve → new MIF file |
+| **Remove** | Flag outdated or invalid content for deletion | Flagged for review → remove after approval |
+
+For small changes, OpenCode edits directly into a new MIF file. For structural changes (new sections, new chapters), OpenCode presents a proposal in chat first — content is only written to the MIF file after approval.
+
+> ⚠️ The full content editing and MIF round-trip approach is to be **validated in the pilot book** before applying to all 15 books.
 
 ### Phase 3 — Update translations (~45 FM files, 10 languages)
 
