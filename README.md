@@ -30,14 +30,54 @@ Online help manuals for ECO3 products (Apogee, ProductionCenter, PrintSphere) ar
 
 ---
 
-## Workflow
+## Scope
 
-```
-FrameMaker source files → AI-assisted review → content updates → revised OLH output
-                       → AI-assisted translation → translated OLH output → translation review
-```
+| Dimension | Count | Notes |
+|---|---|---|
+| English FM books | 15 | Processed one book at a time |
+| Pages per book | 100–1000 | Larger books split by chapter for AI processing |
+| Translation languages | 10 | All in FM format — same MIF workflow as English |
+| Translation FM files | ~45 *(to be confirmed)* | Not every book exists in every language |
+| **Total FM files in scope** | **~60** | Exact translation count to be updated |
 
 ---
+
+## Workflow
+
+Each FM book is processed through three sequential phases. **Phase 3 (translations) only starts after the English version is signed off.**
+
+### Phase 1 — Proofread English
+
+```
+.fm (English) → export to MIF
+→ OpenCode: correct spelling, grammar, terminology, punctuation
+→ review and approve
+→ re-import into FrameMaker → save .fm
+```
+
+### Phase 2 — Technical update (English)
+
+```
+Spec / tech note (PDF or Word) + Phase 1 output MIF
+→ OpenCode: compare spec against OLH content
+→ update outdated sections, add new features
+→ review and approve → re-import into FrameMaker
+→ ✓ English signed off — gate before Phase 3
+```
+
+### Phase 3 — Update translations (~45 FM files, 10 languages)
+
+```
+English OLD MIF vs. English NEW MIF → WinMerge diff → changed segments only
+For each language FM file:
+  → export to MIF → locate segments matching English changes
+  → DeepL first-pass translation → OpenCode review and refinement
+  → re-import into FrameMaker → save .fm
+```
+
+> **Starting point:** always the current English version for Phase 1 and 2; current language version for Phase 3.
+
+
 
 ## Tools
 
@@ -58,7 +98,8 @@ FrameMaker source files → AI-assisted review → content updates → revised O
 
 | Tool | Purpose |
 |---|---|
-| | |
+| WinMerge | Diff MIF files between versions to isolate changed segments |
+| DeepL | First-pass machine translation of changed segments across 10 languages |
 
 ---
 
